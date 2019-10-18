@@ -2,6 +2,9 @@
 
 namespace Freight;
 
+/**
+ * Encapsula um valor float sempre positivo
+ */
 final class PositiveDecimal
 {
     const MINIMUM = 0;

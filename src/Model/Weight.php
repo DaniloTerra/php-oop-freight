@@ -2,6 +2,9 @@
 
 namespace Freight;
 
+/**
+ * Representa o peso na simulação de frete, contendo o código da unidade de medida e o valor
+ */
 final class Weight
 {
     /**

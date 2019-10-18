@@ -2,9 +2,14 @@
 
 namespace Freight;
 
+/**
+ * Simulador de frete
+ */
 final class Simulator
 {
     /**
+     * Simula o calculo de frete retornando o valor monetário a ser cobrado
+     *
      * @param Money $costKiloPerKilometer
      * @param Weight $weight
      * @param Distance $distance
@@ -17,9 +22,6 @@ final class Simulator
 
         $value = $costKiloPerKilometer->getValue()->getValue() * $kilos->getValue()->getValue() * $kilometers->getValue()->getValue();
 
-        return new Money(
-            $costKiloPerKilometer->getCurrency(),
-            new PositiveDecimal($value)
-        );
+        return new Money($costKiloPerKilometer->getCurrency(), new PositiveDecimal($value));
     }
 }
