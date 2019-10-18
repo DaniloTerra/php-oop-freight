@@ -5,15 +5,16 @@ namespace Freight;
 use ReflectionClass;
 
 /**
+ * Enumeration no estilo Java
  * Usar trait
  */
-
 class Enum
 {
     /**
      * @var string
      */
     protected $value;
+
 
     /**
      * Enum constructor.
@@ -32,8 +33,10 @@ class Enum
             }
 
             $this->value = $currency;
-        } catch (\ReflectionException $error) {}
+        } catch (\ReflectionException $error) {
+        }
     }
+
 
     /**
      * @return string

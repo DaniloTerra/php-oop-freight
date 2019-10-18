@@ -2,6 +2,9 @@
 
 namespace Freight;
 
+/**
+ * Representa uma distância, contendo unidade de medida e valor
+ */
 final class Distance
 {
     /**

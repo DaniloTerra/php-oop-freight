@@ -2,6 +2,9 @@
 
 namespace Freight;
 
+/**
+ * Representação monetária contendo código de moeda e valor
+ */
 final class Money
 {
     /**
