@@ -1,1 +1,0 @@
-curl -i -X POST -d '{"cost": {"currency": "BRL", "value": 11.50}, "distance": {"unit": "kilometer", "value": 100}, "weight": {"unit": "kilogram", "value": 10}}' http://localhost/
